@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: svc-pod 
+  labels:
+    app: test-2
+spec:
+  containers: 
+    - name: test-co 
+      image: kolakavya/javarepo
+      ports:
+        - containerPort: 8080
+          protocol: TCP
