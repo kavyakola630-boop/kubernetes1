@@ -8,4 +8,4 @@ spec:
     app: test-2
   ports:
     - port: 808
-      nodeport:32768  
+      nodeport: 32768  
