@@ -8,4 +8,4 @@ spec:
     app: test-2
   ports:
     - port: 8080
-      nodePort: 32768   
+      nodePort: 30008  
