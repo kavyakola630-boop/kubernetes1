@@ -10,7 +10,7 @@ spec:
       image: nginx:1.29
       ports:
         - containerPort: 80
-      livenessprobe:
+      livenessProbe:
         exec: 
           command:
             - cat 
