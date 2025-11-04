@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: jenkins-container
-      image: jenkins/jenkins:lts
+      image: jenkins/jenkins:slim
       ports:
         - containerPort: 8080
       resources:
