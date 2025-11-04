@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jenkins-utilization
+  labels:
+    app: jenkins-test
+spec:
+  containers:
+    - name: jenkins-container
+      image: jenkins/jenkins:lts
+      ports:
+        - containerPort: 8080
+      resources:
+        requests:
+          memory: "512Mi"
+          cpu: "500m"
+        limits:
+          memory: "1024Mi"
+          cpu: "1000m"
+  restartPolicy: Always
