@@ -10,6 +10,8 @@ spec:
       image: jenkins/jenkins:lts-alpine
       ports:
         - containerPort: 8080
+      securityContext:
+        runAsUser: 0   
       resources:
         requests:
           memory: "128Mi"
@@ -18,4 +20,5 @@ spec:
           memory: "128Mi"
           cpu: "300m"
   restartPolicy: Always
+
 
