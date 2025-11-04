@@ -6,7 +6,7 @@ metadata:
     app: mytest-pod
 spec:
   containers:
-    - name: mytest-container
+    - name: jenkins
       image: jenkins/jenkins:lts-alpine
       ports:
         - containerPort: 8080
