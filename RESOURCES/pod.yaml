@@ -15,9 +15,9 @@ spec:
         allowPrivilegeEscalation: true
       resources:
         requests:
-          memory: "500Mi"
+          memory: "300Mi"
           cpu: "200m"
         limits:
           memory: "600Mi"
           cpu: "500m"
-  restartPolicy: Always
+  restartPolicy: Alwaysd
