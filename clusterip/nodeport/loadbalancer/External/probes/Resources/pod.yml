@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: jenkins-utilization
   labels:
-    app: mytest-pod
+    app: jenkins-pod
 spec:
   containers:
     - name: jenkins
@@ -11,7 +11,8 @@ spec:
       ports:
         - containerPort: 8080
       securityContext:
-        runAsUser: 0   
+        runAsUser: 0       # run as root to install tools like 'stress'
+        allowPrivilegeEscalation: true
       resources:
         requests:
           memory: "128Mi"
