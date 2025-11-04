@@ -20,4 +20,4 @@ spec:
         limits:
           memory: "600Mi"
           cpu: "500m"
-  restartPolicy: Alwaysd
+  restartPolicy: Always
