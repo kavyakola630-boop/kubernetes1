@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod 
+metadata: 
+  name: mydummy-pod
+  labels:
+    app: dummy-app
+  annotations:
+    myecr: "639261426572.dkr.ecr.ap-south-1.amazonaws.com/dummyrepo"
+    service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
+spec:
+  containers:
+    - name: my-co 
+      image: nginx:latest
+      ports: 
+        - containerPort: 80
